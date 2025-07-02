@@ -242,3 +242,22 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+# fixtures = [
+#     {'dt':'Custom Field','filters': [['module','=','South Control Custom App']]},
+#     {'dt':'Property Setter','filters': [['module','=','South Control Custom App']]}
+#     ]
+
+fixtures = [
+    {
+        'dt': 'Notification',
+        'filters': [['name', 'in', ['Estimation']]]
+    },
+    {
+        'dt': 'Workflow',
+        'filters': [['name', 'in', ['Estimation Form']]]
+    },
+    {
+        'dt': 'Role',
+        'filters': [['name', 'in', ['Final Approver', 'Estimation Approver']]]
+    }
+]

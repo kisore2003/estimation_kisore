@@ -1,0 +1,43 @@
+[
+ {
+  "attach_print": 0,
+  "channel": "Email",
+  "condition": "doc.workflow_state==\"Final Approval\"",
+  "date_changed": null,
+  "days_in_advance": 0,
+  "docstatus": 0,
+  "doctype": "Notification",
+  "document_type": "Estimation Form",
+  "enabled": 1,
+  "event": "Submit",
+  "is_standard": 0,
+  "message": "<h1>Project Title:{{doc.project_name}}</h1>\n<h3>Total Amount:{{doc.total_estimated_amount}}</h3>\n<h3>Project Id:{{doc.project_id}}</h3>\n<h4>Thank You</h4>",
+  "message_type": "Markdown",
+  "method": null,
+  "modified": "2025-07-02 15:17:44.333128",
+  "module": null,
+  "name": "Estimation",
+  "print_format": null,
+  "property_value": null,
+  "recipients": [
+   {
+    "bcc": null,
+    "cc": null,
+    "condition": null,
+    "parent": "Estimation",
+    "parentfield": "recipients",
+    "parenttype": "Notification",
+    "receiver_by_document_field": null,
+    "receiver_by_role": "All"
+   }
+  ],
+  "send_system_notification": 1,
+  "send_to_all_assignees": 0,
+  "sender": "Support",
+  "sender_email": "kisorecraftinteractive@gmail.com",
+  "set_property_after_alert": null,
+  "slack_webhook_url": null,
+  "subject": "Quotation Approved",
+  "value_changed": null
+ }
+]
